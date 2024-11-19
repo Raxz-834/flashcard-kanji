@@ -1,0 +1,132 @@
+/* Web 1 */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Web 2 */
+.flashcard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.flashcard {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    font-size: 40px; /* Membesarkan font kanji */
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.flashcard.show-details .front {
+    display: none;
+}
+
+.flashcard.show-details .back {
+    display: block;
+}
+
+.flashcard .back {
+    display: none;
+}
+
+.flashcard .front {
+    display: block;
+}
+
+.flashcard p {
+    font-size: 28px; /* Membesarkan font cara baca dan arti */
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .flashcard {
+        width: 80%;
+        font-size: 32px; /* Menyesuaikan font kanji */
+    }
+
+    .flashcard p {
+        font-size: 24px; /* Menyesuaikan font cara baca dan arti */
+    }
+}

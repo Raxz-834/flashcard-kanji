@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 1 - Input Kanji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Input Kanji</h1>
+
+<form id="kanji-form">
+    <label for="kanji">Kanji:</label>
+    <input type="text" id="kanji" name="kanji" required>
+
+    <label for="read">Cara Baca:</label>
+    <input type="text" id="read" name="read" required>
+
+    <label for="meaning">Arti:</label>
+    <input type="text" id="meaning" name="meaning" required>
+
+    <div class="buttons-container">
+        <button type="submit">Simpan Kanji</button>
+        <button id="flashcard-btn" onclick="window.location.href='web2.html'">Lihat Flashcard</button>
+    </div>
+</form>
+
+<h2>Data Kanji yang Disimpan</h2>
+<table id="kanji-table">
+    <thead>
+        <tr>
+            <th>Kanji</th>
+            <th>Cara Baca</th>
+            <th>Arti</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data akan tampil di sini -->
+    </tbody>
+</table>
+
+<script src="web1.js"></script>
+
+</body>
+</html>
